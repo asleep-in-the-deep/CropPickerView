@@ -399,7 +399,7 @@ public class CropPickerView: UIView {
      isRealCropRect: image real crop or image frame crop
     */
     public func image(_ image: UIImage?, isMin: Bool = true, crop: CGRect? = nil, isRealCropRect: Bool = false) {
-        imageView.image = image?.fixOrientation
+        imageView.image = image
         if isMin {
             scrollView.setZoomScale(1, animated: false)
         } else {
